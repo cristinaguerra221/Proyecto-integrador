@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de registro </title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header>
+
+    <h2>Registro de estudiantes</h2>
+    <img src="img/Logo institución.png" alt="logo">
+</header>
+
+
+<nav>
+    <p><a href="inicio.html">Inicio </a></p>
+    <p>/</p>
+    <p>Formulario de inscripción</p>
+
+</nav>
+
+<section>
+
+    <form action="#"methot="get">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Ingrese su nombre</label><br>
+                <input type="text" id="nombre"name="nombre"required maxlength="60">
+            </p>
+            
+            <p>
+                
+                
+                <label for="email">correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            
+
+            
+                 <p>
+                     <label for="eded">Ingrese su edad:</label><br>
+                    <input type="number" id="eded" name="edad" min="18" max="99">
+                </p>
+                
+                <p>
+                    <label for="fechanNac">fecha de nacimiento:</label><br>
+                    <input type="date" id="fechanNac" name="fechanNac">
+                    
+                </p>
+            </fieldset>
+        </section>
+        <section>
+
+            
+            <fieldset>
+                <legend>Materias</legend>
+
+                <p> Materias a inscribir</p>
+                
+                
+                <input type="radio" id="matematicas" name="materia" value="matematicas">
+                <label for="matematicas">Matemáticas</label><br>
+                
+                <input type="radio" id="espanol" name="materia" value="espanol">
+                <label for="espanol">Español</label><br>
+
+                <input type="radio" id="ingles" name="materia" value="ingles">
+                <label for="ingles">Inglés</label><br>
+
+                <input type="radio" id="sistemas" name="materia" value="sistemas">
+                <label for="sistemas">Sistemas</label><br>
+
+                <input type="radio" id="ciencias" name="materia" value="ciencias">
+                <label for="ciencias">Ciencias</label><br>
+
+                <input type="radio" id="historia" name="materia" value="historia">
+                <label for="historia">Historia</label><br>
+
+                <input type="radio" id="educacion_fisica" name="materia" value="educacion_fisica">
+                <label for="educacion_fisica">Educación Física</label>
+        
+            
+            <p>Materias extracurriculares:</p>
+            
+             <input type="checkbox" id="pensamiento_critico" name="materias_extra" value="pensamiento_critico">
+            <label for="pensamiento_critico">Pensamiento Crítico</label><br>
+
+            <input type="checkbox" id="salud_bienestar" name="materias_extra" value="salud_bienestar">
+            <label for="salud_bienestar">Salud y Bienestar</label><br>
+
+            <input type="checkbox" id="herramientas_digitales" name="materias_extra" value="herramientas_digitales">
+            <label for="herramientas_digitales">Uso de Herramientas Digitales</label><br>
+
+            <input type="checkbox" id="metodologias_agiles" name="materias_extra" value="metodologias_agiles">
+            <label for="metodologias_agiles">Metodologías Ágiles</label><br>
+        </p>
+        <p>
+            
+            <label for="horario">Horario preferencial:</label>
+                
+            <select id="horario" name="horario">
+                <option value="mañana">
+                    Mañana (Lunes, Miércoles y Viernes - 7:00 AM a 10:00 AM)
+                </option>
+                <option value="tarde">
+                    Tarde (Martes, Jueves y Viernes - 2:00 PM a 5:00 PM)
+                </option>
+                <option value="noche">
+                    Noche (Lunes, Miércoles y Jueves - 6:00 PM a 9:00 PM)
+                </option>
+                <option value="fines_de_semana">
+                    Fines de Semana (Sábados  - 8:00 AM a 4:00 PM)
+                </option>
+                <option value="virtual">
+        Virtual (Martes, Jueves y Viernes - 7:00 PM a 9:00 PM)
+                </option>
+            </select>
+        </p>
+</fieldset>
+<fieldset>
+    <legend>comentarios adicionales</legend>
+    <p>
+        <label for="comentarios">informacion extra</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    </p>
+</fieldset>
+<p>
+    <button type="submit">enviar</button>
+    <button type="reset">limpiar campos</button>
+</p>
+</form>
+</section>
+</body>
+</html>
+
